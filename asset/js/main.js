@@ -1,6 +1,6 @@
 
 
-const mainEl = document.querySelector("main")
+const mainEl = document.querySelector(".container")
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     .then(response => {
         let items
@@ -16,7 +16,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             console.log(albumId);
 
             let markup = `
-                <div class="card">
+                <div class="card_mobile card_tablet">
                 <div class="circle"></div>
                 <div class="img">
                     <img src=${url} alt="">
