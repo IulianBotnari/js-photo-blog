@@ -28,13 +28,19 @@ body{
 
 }
 
-main{
+.pre_overlay{
     background-image: url(../img/cork.png);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     height: 90vh;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_mobile{
@@ -154,3 +160,5 @@ p{
         flex-wrap: wrap;
     }
   }
+
+

@@ -1,6 +1,7 @@
 
 
 const mainEl = document.querySelector(".container")
+let overlay = document.querySelector(".overlay");
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     .then(response => {
         let items
@@ -11,9 +12,9 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
             let { albumId, id, title, url, thumbnailUrl } = itemsEl
 
-            console.log(itemsEl)
 
-            console.log(albumId);
+
+            
 
             let markup = `
                 <div class="card_mobile card_tablet">
@@ -33,5 +34,19 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     })
 
 
+    let images = document.querySelectorAll(".img")
+    let imageSrc = document.querySelector(".img").src
+    console.log(images)
+    
+    
+    
+    images.forEach((image) => {
+        image.addEventListener("click", () => {
 
+            overlay.insertAdjacentHTML("beforeend", `<img src="${imageSrc}`)
+            
+        })
+    })
+
+    
 
