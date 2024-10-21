@@ -41,6 +41,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 90vh;
+    position: relative;
+    
 }
 
 .card_mobile{
@@ -162,3 +165,13 @@ p{
   }
 
 
+.d_none{
+    display: none;
+}
+
+
+.btn{
+    position: absolute;
+    right: 0;
+    top:0;
+}
