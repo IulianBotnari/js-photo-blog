@@ -14,7 +14,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
 
 
-            
+
 
             let markup = `
                 <div class="card_mobile card_tablet">
@@ -26,27 +26,29 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
                 
             </div>
         `
-        mainEl.insertAdjacentHTML("beforeend", markup)
+            mainEl.insertAdjacentHTML("beforeend", markup)
 
         })
 
 
-    })
-
-
-    let images = document.querySelectorAll(".img")
-    let imageSrc = document.querySelector(".img").src
-    console.log(images)
-    
-    
-    
-    images.forEach((image) => {
-        image.addEventListener("click", () => {
-
-            overlay.insertAdjacentHTML("beforeend", `<img src="${imageSrc}`)
-            
+        let images = document.querySelectorAll(".img")
+        let imageSrc = document.querySelector("img").src
+        
+        
+        
+        
+        
+        
+        images.forEach((image) => {
+            image.addEventListener("click", () => {
+        
+                overlay.insertAdjacentHTML("beforeend", `<img src=${imageSrc}>`)
+        
+            })
         })
-    })
+
+    })    
 
     
+
 
