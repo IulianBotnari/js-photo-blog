@@ -18,7 +18,7 @@ h1{
 }
 
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container{
@@ -37,14 +37,34 @@ body{
     height: 90vh;
 }
 
-.overlay{
-    display: flex;
+.overlay_d_none{
+    background-color: rgba(0, 0, 0, 0.822);
+    position: absolute;
+    display: none;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    max-height: 90vh;
-    position: relative;
-    
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+
+  
 }
+
+.overlay_d_flex{
+    background-color: rgba(0, 0, 0, 0.822);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+
+  
+}
+
+
+
 
 .card_mobile{
     display: flex;
@@ -170,8 +190,3 @@ p{
 }
 
 
-.btn{
-    position: absolute;
-    right: 0;
-    top:0;
-}
