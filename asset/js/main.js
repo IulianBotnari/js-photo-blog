@@ -50,7 +50,9 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
             })
         })
-
+        buttonEL.addEventListener("click", (e)=>{
+            overlay.classList.replace("overlay_d_flex", "overlay_d_none")
+        })
         
 
     })
